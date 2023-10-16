@@ -470,7 +470,7 @@ day_diff = function(d1, d2) {
 }
 
 function update_age() {
-    age.innerHTML = round_to(8, day_diff('Jan 26, 2004 13:25:00', new Date()) / 365);
+    age.innerHTML = round_to(8, day_diff('Sept 15, 2006 12:00:00', new Date()) / 365);
 }
 
 update_age();
