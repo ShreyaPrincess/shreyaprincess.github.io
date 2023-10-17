@@ -488,7 +488,8 @@ main .close-button {
     bottom: -2.5rem;
     top: auto;
     margin-left: -1.875rem;
-    transform: rotate(270deg)
+    transform: rotate(270deg);
+    filter: brightness(30);
 }
 
 .queryloader__overlay__bar {
@@ -855,7 +856,9 @@ body.demo .container .copyright p small {
 
 .about.active-screen .close-button {
     opacity: 1;
-    bottom: 2.5rem
+    bottom: 2.5rem;
+    filter: brightness(30);
+
 }
 
 .about.active-screen .close-button:hover {
@@ -1993,4 +1996,35 @@ body.project-single .ajaxpage__content--description .social li a:focus {
 body.project-single .ajaxpage__content--description .social li a:hover span,
 body.project-single .ajaxpage__content--description .social li a:focus span {
     transform: translateY(-200%)
+}
+
+#nick_container {
+    height: 1.3em;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#nick {
+    float: right;
+    display: inline-block;
+    animation: popin 2s ease-in-out infinite;
+    filter: brightness(40);
+}
+
+#nickbold {
+    filter: brightness(100);
+}
+
+@keyframes popin {
+
+    0%,
+    30% {
+        transform: translate(0px, 0px);
+
+    }
+
+    40%,
+    90% {
+        transform: translate(0px, -1.5em);
+    }
 }
